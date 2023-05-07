@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical"
+    tools:context=".FinalActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp">
+
+        <View
+            android:id="@+id/rectangle_7"
+            android:layout_width="459dp"
+            android:layout_height="532dp"
+            android:layout_marginLeft="-51dp"
+            android:layout_marginTop="-400dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:rotation="75" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:backgroundTint="@color/blue"
+                android:foreground="?attr/actionModeCloseDrawable"
+                android:foregroundTint="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/also_you_ca"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:adSize="FULL_BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/banner_boost"
+        android:layout_width="309dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/banner"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_vector"
+            android:backgroundTint="@color/blue2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb_24_83_fr_2"
+            android:textColor="@color/blue2"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_boost_banner"
+            style="@style/BoostButton"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/boost"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/banner_boost_battery"
+        android:layout_width="309dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/banner"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_emojione_monotone_battery"
+            android:backgroundTint="@color/blue2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/charging_ti_2"
+            android:textColor="@color/blue2"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_boost_battery_banner"
+            android:backgroundTint="@color/purple"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/boost_batte"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/banner_optimize"
+        android:layout_width="309dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/banner"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="27dp"
+            android:background="@drawable/ic_vector_2" />
+
+        <TextView
+            android:id="@+id/text_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_cpu_tempera2"
+            android:textColor="@color/blue2"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_optimize_banner"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:background="@drawable/gradient_optimazer"
+            android:text="@string/optimize"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/banner_clean"
+        android:layout_width="309dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/banner"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_clarity_trash_solid"
+            android:backgroundTint="@color/blue2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb_24_83_fr_2"
+            android:textColor="@color/blue2"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_clean_banner"
+            style="@style/BoostButton"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/clean"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

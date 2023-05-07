@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blue"
+    tools:context=".SplashScrean">
+
+    <ImageView
+        android:layout_width="158dp"
+        android:layout_height="325dp"
+        android:background="@drawable/robot"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ultra_clean"
+        android:textAppearance="@style/ultra_clean"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_start"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/background"
+            android:button="@null"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/i_have_read"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/RoundedCornerButton"
+        android:background="@drawable/rounded_button"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
+        android:enabled="false"
+        android:text="@string/start"
+        android:textColor="@color/blue2"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ultra_clean"><item name="android:textSize">36sp</item><item name="android:textColor">#FFFFFF</item></style>
+
+    <style name="RoundedCornerButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="background">@drawable/rounded_button</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="BoostButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+    <style name="BoostBattery" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="backgroundTint">@color/purple</item>
+    </style>
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/blue</item>
+
+    </style>
+</resources>

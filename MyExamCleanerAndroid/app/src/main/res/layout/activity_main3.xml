@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+
+        <View
+            android:id="@+id/rectangle_7"
+            android:layout_width="459dp"
+            android:layout_height="532dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-51dp"
+            android:layout_marginTop="-136dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:rotation="75" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/optimizer"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="100dp"
+                android:text="@string/optimizer"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_group_80" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gradus_31"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="@string/c"
+                    android:textSize="80sp" />
+
+                <TextView
+                    android:id="@+id/gb_24_83_fr"
+                    android:layout_width="151dp"
+                    android:layout_height="79dp"
+                    android:text="@string/cpu_tempera"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_group" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="FULL_BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_optimize"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient_optimazer"
+            android:text="@string/optimize"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            android:textSize="18sp">
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/progress_circular3"
+            android:layout_width="240dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="74dp"
+            android:theme="@style/CircularProgress"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_raketa3"
+            android:layout_width="69dp"
+            android:layout_height="82dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/ic_vector"
+            android:foregroundGravity="center"
+            android:text=""
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_battery3"
+            android:layout_width="69dp"
+            android:layout_height="82dp"
+            android:foreground="@drawable/ic_emojione_monotone_battery"
+            android:layout_marginRight="20dp"
+            android:foregroundGravity="center"
+            android:text=""
+            android:backgroundTint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <Button
+            android:id="@+id/btn_fan3"
+            android:layout_width="69dp"
+            android:layout_height="82dp"
+            android:foreground="@drawable/ic_vector__1_"
+            android:layout_marginRight="20dp"
+            android:foregroundGravity="center"
+            android:text=""
+            android:backgroundTint="@color/blue2"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <Button
+            android:id="@+id/btn_trash3"
+            android:layout_width="69dp"
+            android:layout_height="82dp"
+            android:foreground="@drawable/ic_clarity_trash_solid"
+            android:layout_marginRight="20dp"
+            android:foregroundGravity="center"
+            android:text=""
+            android:backgroundTint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</LinearLayout>
